@@ -11,7 +11,7 @@ import UIKit
 class InitialTabBarViewController: UIViewController {
 
     @IBOutlet weak var contentView: UIView!
-    
+    @IBOutlet weak var popoverImage: UIImageView!
     @IBOutlet var buttons: [UIButton]!
     
     var homeViewController: UIViewController!
@@ -23,6 +23,8 @@ class InitialTabBarViewController: UIViewController {
     
     var selectedIndex: Int = 0
 
+    var popoverDistance: CGFloat = 5
+    let popoverAnimateTime: Double = 0.7
     
     
     
@@ -41,7 +43,7 @@ class InitialTabBarViewController: UIViewController {
         buttons[selectedIndex].isSelected = true
         didTapButton(buttons[selectedIndex])
         
-        
+        animatePopover()
     }
 
     override func didReceiveMemoryWarning() {
@@ -68,9 +70,23 @@ class InitialTabBarViewController: UIViewController {
         contentView.addSubview(vc.view)
         vc.didMove(toParentViewController: self)
         
+        if vc != searchViewController {
+            popoverImage.isHidden = false
+        } else {
+            popoverImage.isHidden = true
+        }
         
     }
     
+    func animatePopover(){
+        UIView.animate(withDuration:popoverAnimateTime, animations: {
+            self.popoverImage.frame.origin.y += self.popoverDistance
+        }) { (Bool) in
+            self.popoverDistance = self.popoverDistance * -1
+            self.animatePopover()
+        }
+    }
+
     
 
     /*

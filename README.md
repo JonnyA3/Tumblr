@@ -2,7 +2,7 @@
 
 The purpose of this homework is to leverage animations and gestures to create custom navigation. We're going to use the techniques from this week to implement some interactions in Tumblr.
 
-Time spent: `<Number of hours spent>`
+Time spent: `16`
 
 ### Features
 
@@ -15,16 +15,16 @@ Time spent: `<Number of hours spent>`
 
 - [ ] Compose screen is faded in while the buttons animate in.
 - [ ] Login button should show animate the login form over the view controller.
-- [ ] Discover bubble should bob up and down unless the SearchViewController is tapped.
+- [x] Discover bubble should bob up and down unless the SearchViewController is tapped.
+- [x] Search screen displays loading indicator befor displaying screen
 
 #### The following **additional** features are implemented:
 
-- [ ] List anything else that you can get done to improve the app functionality!
 
 Please list two areas of the assignment you'd like to **discuss further with your peers** during the next class (examples include better ways to implement something, how to extend your app in certain ways, etc):
 
-1. 
-2. 
+1. how to achieve the compose screen individual button transitions
+2. how to get the bobbing bubble to stop displaying after the first time the search tab has been tapped.
 
 ### Video Walkthrough 
 

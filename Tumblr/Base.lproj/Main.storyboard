@@ -19,6 +19,10 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" misplaced="YES" image="explore_popup" id="iHe-gk-1Gj">
+                                <frame key="frameInset" minY="447" width="185" height="77"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
                             <view contentMode="scaleToFill" misplaced="YES" id="tOO-hx-Do9">
                                 <frame key="frameInset" minY="524" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -75,6 +79,7 @@
                     </view>
                     <connections>
                         <outlet property="contentView" destination="w2y-VZ-q73" id="sle-ml-6eB"/>
+                        <outlet property="popoverImage" destination="iHe-gk-1Gj" id="IER-sU-yEt"/>
                         <outletCollection property="buttons" destination="zHy-rf-HZq" collectionClass="NSMutableArray" id="qn3-qB-y3A"/>
                         <outletCollection property="buttons" destination="0Zw-2c-Yhq" collectionClass="NSMutableArray" id="6Bq-y7-LxZ"/>
                         <outletCollection property="buttons" destination="I1Z-c8-8si" collectionClass="NSMutableArray" id="D4C-zU-Awf"/>
@@ -132,9 +137,17 @@
                                 <frame key="frameInset" width="320" height="524"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="loading-1" id="GMn-xT-R6j">
+                                <frame key="frameInset" minX="139" minY="271" width="61" height="19"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.11545810099999999" green="0.14617191260000001" blue="0.2050073147" alpha="0.90000000000000002" colorSpace="calibratedRGB"/>
                     </view>
+                    <connections>
+                        <outlet property="loadingImage" destination="GMn-xT-R6j" id="7Ov-4I-X5z"/>
+                        <outlet property="searchFeedView" destination="prU-9I-U2B" id="2My-wG-lC2"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TKk-9M-KbC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -287,12 +300,14 @@
         <image name="account_selected_icon" width="35" height="35"/>
         <image name="chat_icon" width="75" height="96"/>
         <image name="compose_button" width="50" height="35"/>
+        <image name="explore_popup" width="185" height="77"/>
         <image name="home" width="320" height="524"/>
         <image name="home_icon" width="35" height="35"/>
         <image name="home_overlay" width="320" height="100"/>
         <image name="home_selected_icon" width="35" height="35"/>
         <image name="home_spinner" width="146" height="146"/>
         <image name="link_icon" width="75" height="95"/>
+        <image name="loading-1" width="61" height="19"/>
         <image name="login_form" width="300" height="132"/>
         <image name="photo_icon" width="75" height="95"/>
         <image name="quote_icon" width="75" height="96"/>

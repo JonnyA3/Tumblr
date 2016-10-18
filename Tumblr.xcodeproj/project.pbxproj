@@ -23,6 +23,7 @@
 		C8B73C601DB474BF00BDE38D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B73C5F1DB474BF00BDE38D /* LoginViewController.swift */; };
 		C8B73C621DB4775B00BDE38D /* BaseTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B73C611DB4775B00BDE38D /* BaseTransition.swift */; };
 		C8B73C641DB4776100BDE38D /* FadeTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B73C631DB4776100BDE38D /* FadeTransition.swift */; };
+		C8B73C661DB5C73000BDE38D /* common.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B73C651DB5C72F00BDE38D /* common.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +66,7 @@
 		C8B73C5F1DB474BF00BDE38D /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		C8B73C611DB4775B00BDE38D /* BaseTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTransition.swift; sourceTree = "<group>"; };
 		C8B73C631DB4776100BDE38D /* FadeTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FadeTransition.swift; sourceTree = "<group>"; };
+		C8B73C651DB5C72F00BDE38D /* common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = common.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +123,7 @@
 				C8B73C611DB4775B00BDE38D /* BaseTransition.swift */,
 				C8B73C631DB4776100BDE38D /* FadeTransition.swift */,
 				C8B73C521DB4434700BDE38D /* InitialTabBarViewController.swift */,
+				C8B73C651DB5C72F00BDE38D /* common.swift */,
 				C8B73C561DB445D000BDE38D /* View Controllers */,
 				C8B73BEF1DB3F1C800BDE38D /* Assets.xcassets */,
 				C8B73BF11DB3F1C800BDE38D /* LaunchScreen.storyboard */,
@@ -302,6 +305,7 @@
 				C8B73C5C1DB447CA00BDE38D /* AccountViewController.swift in Sources */,
 				C8B73C641DB4776100BDE38D /* FadeTransition.swift in Sources */,
 				C8B73BEB1DB3F1C700BDE38D /* ViewController.swift in Sources */,
+				C8B73C661DB5C73000BDE38D /* common.swift in Sources */,
 				C8B73C5A1DB4477B00BDE38D /* ComposeViewController.swift in Sources */,
 				C8B73BE91DB3F1C700BDE38D /* AppDelegate.swift in Sources */,
 				C8B73C551DB4444400BDE38D /* HomeViewController.swift in Sources */,
